@@ -1,0 +1,97 @@
+:root {
+    --amarillo: hsl(47, 88%, 63%);
+    --blanco: hsl(0, 0%, 100%);
+    --negro: hsl(0, 0%, 7%);
+    --gris: hsl(0, 0%, 50%);
+    --verde: #328043;
+    --fuentePrincipal: "Figtree", sans-serif;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--fuentePrincipal);
+    background: var(--amarillo);
+}
+img{
+    width: 100%;
+}
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--blanco);
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-top: 23rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 12px 12px 0px var(--negro);
+    border: 1px solid var(--negro);
+}
+.card__imagen img{
+    border-radius: 1rem;
+}
+.card__learning{
+    font-weight: 800;
+    background-color: var(--amarillo);
+    display: inline-block;
+    padding: .5rem;
+    margin-top: 1.4rem;
+    border-radius: .5rem;
+}
+.card__published{
+    font-weight: 500;
+    margin: 1.5rem 0;
+}
+.card__titulo{
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+.card__titulo:hover{
+    cursor: pointer;
+    color: var(--amarillo);
+    transition: color 0.3s ease;
+}
+.card__texto{
+    font-weight: 500;
+    color: var(--gris);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.card__user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card__avatar{
+    width: 2.8rem;
+}
+.card__username{
+    font-weight: 800;
+}
+.footer{
+    text-align: center;
+    margin-top: 15rem;
+}
+.footer__texto{
+    color: var(--negro);
+}
+.footer__texto a {
+    color: #148b94;
+    font-weight: 800;
+    text-decoration: none;
+}
